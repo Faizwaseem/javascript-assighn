@@ -24,7 +24,7 @@ outline: none;
 h1{
     color: black;
 }
-button{
+.abutton{
     color: white;
 width: 60px;
 height: 41px;
@@ -32,3 +32,17 @@ background-color: rgb(04, 29, 29);
 border: none;
 outline: none;
 }
+button{
+
+margin-top: 2%;
+
+}
+li{
+
+    background-color: blue;
+color: black;
+margin-top: 2%;
+}
+
+
+
