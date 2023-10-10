@@ -15,31 +15,36 @@ const inputsighn2 =document.querySelector('.inputsighn2')
 
 
 logarr=[]
+
 submitlog.addEventListener('click', function(){
-
-
-    logarr.push(input1.value,inputlog2.value)
-console.log(logarr)
-input1.value=''
-inputlog2.value=''
-// console.log(input1.value, inputlog2.value)
-
-
-
+const UserD = {
+    user:input1.value, 
+    pass: inputlog2.value,
+}
+    // logarr.push(input1.value,inputlog2.value)
+    logarr.push(UserD)
+    console.log(logarr)
+    input1.value=''
+    inputlog2.value=''
+    
+    const Array = JSON.stringify(logarr)
+    localStorage.setItem("item", Array)
 })
-
 
 
 // sighnarr=[]
 
 
-// submitsighn.addEventListener('click', function(){
+submitsighn.addEventListener('click', function(){
 
-//     console.log(input2,inputsighn2)
+    console.log(input2.value )
 
-// })
+})
 
+const items = JSON.parse(item)
+localStorage.getItem("data", items)
+// localStorage.getItem(Arr)
 
-
+console.log()
 
 
